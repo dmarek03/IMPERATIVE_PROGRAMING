@@ -1,0 +1,3 @@
+C:/Programowanie_imperatywne/double_ended_linked_list/cmake-build-debug/CMakeFiles/double_ended_linked_list.dir
+C:/Programowanie_imperatywne/double_ended_linked_list/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Programowanie_imperatywne/double_ended_linked_list/cmake-build-debug/CMakeFiles/rebuild_cache.dir

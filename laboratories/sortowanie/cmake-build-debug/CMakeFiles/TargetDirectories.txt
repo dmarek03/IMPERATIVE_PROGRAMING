@@ -1,0 +1,3 @@
+C:/Programowanie_imperatywne/sortowanie/cmake-build-debug/CMakeFiles/sortowanie.dir
+C:/Programowanie_imperatywne/sortowanie/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Programowanie_imperatywne/sortowanie/cmake-build-debug/CMakeFiles/rebuild_cache.dir
