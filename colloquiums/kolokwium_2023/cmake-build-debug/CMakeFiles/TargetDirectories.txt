@@ -1,0 +1,3 @@
+C:/Programowanie_imperatywne/kolokwium_2023/cmake-build-debug/CMakeFiles/kolokwium_2023.dir
+C:/Programowanie_imperatywne/kolokwium_2023/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Programowanie_imperatywne/kolokwium_2023/cmake-build-debug/CMakeFiles/rebuild_cache.dir

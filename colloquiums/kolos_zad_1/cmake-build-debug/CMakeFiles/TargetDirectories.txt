@@ -1,0 +1,3 @@
+C:/Programowanie_imperatywne/kolos_zad_1/cmake-build-debug/CMakeFiles/kolos_zad_1.dir
+C:/Programowanie_imperatywne/kolos_zad_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Programowanie_imperatywne/kolos_zad_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

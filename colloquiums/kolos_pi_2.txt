@@ -1,0 +1,49 @@
+Zadanie odnosi się do listy, która ma być implementacją kolejki FIFO. Każdy element kolejki zawiera 
+w strukturze Data dane o jednym ciągu pomiarów:wynikach zapisanych na stercie w tablicy results i ich 
+liczbie len.
+
+typedef struct{
+ double *results;
+ int len;
+
+}Data;
+
+Na kolejce mogą być wykonywane tylko operacje:
+toworzenia i inicjowania listy;
+dodawania elementu na koniec kolejki;
+usunięcia elementu z początku kolejki;
+odczytu danych z początkowego elementu kolejki;
+obliczenia danej wymagającej dostępu do każdego elementu kolejki;
+likwidsacji kolejki
+
+Należy:
+
+1) Uzupełnić deklarcaję dwóch "oszczędnych" struktur w taki sposób, aby nie zawierały pól 
+  niekoniecznnych , a złóżonosć obliczeniwowa operacji na elementach listy była O(1), Łącząc te 
+  deklaracje z definciją nowych typów należałoby uzupełnić wyrażenia:
+   - deklaracja typu elemntu listy(kolejki):
+      typedef struct tagQueueElement{Data data;...} QueueElement;
+   - deklaracje typu listy:
+      typedef struct tagQueue{...}Queue;
+  W przypadku. gdyby struktura tagQueue miała zawierać tylko jedno pole, 
+  można strukturę zastąpić prostą zmienną -zmienną typu Queue, czyli typedef ... Queue;
+
+2) Napisać funkcję void free_queue(Queue *pqueue); która likwiduje kolejkę tzn, zwalnia pamieć przydzieloną wszystkim elementom kolejki. 
+   Nie zwalnia pamięci przydzielonej danym(tj. Wynikom pomiarów)
+
+3) Napisać funkcję void push_copy(Queue *pqueue, const Data *pdata); która wstawia do kolejki 
+   element z danymi przekazanymi przez argument pdata.
+
+4) Napisać funkcję int peek(Queue *pqueue, const Data *pdata); która odczytuje dane z elementu najdłużej oczekującego 
+   w kolejce i przepisuje je pod adres wskazany parametrem pdata.
+   Funkcja zwraca ), jeżeli kolejka jest już pusta, a 1 w przeciwnym przypadku.
+
+5) Napisać funkcję int pop(Queue *pqueue, const Data *pdata);która :
+   - usuwa z kolejki element najdłużej czekający,
+   - zwalnia pamięć elementu,
+   - przekazuje jego dane do zmiennej wskazywanej przez pdata,
+   Funkcją nie zwalania pamięci, w której są zapisane wyniki pomiarów wskazywane w zwalnianym elemencie.
+   Funkcja zwraca -1 gdy kolejka była już pusta, 0 gdy jest pusta po usunięciu elementu. 1 w pozostałych przypadkach.
+
+6) Funkcję int get_total_count(const Queue *pqueue); która zwraca liczbę wszystkich pomiarów, do 
+  których mają dostęp elementy czekające w kolejce.

@@ -1,0 +1,42 @@
+Struktura Person zawiera imię, nazwisko i numer Pesel osoby, jak w definicji poniżej:
+
+typedef struct {
+ char *name;
+ char *surname;
+ char pesel[12];
+
+}Person;
+
+Struktura PersonList zawiera zbiór osób(struktur Person). 
+Wybierz samodzielnie sposób impelmentacji tej struktury(tablica wskaźników, lista)
+
+typed{
+ //...
+}PersonList;
+
+Użyj powyższych struktur danych. Możesz zaimplementować dodatkowe funkcje.
+"Nieinicjalizowana struktura " oznacza zmienną typu strukturalnego z niezaincjalizownymi wartościami pól.
+W każdym podpunkcie można wykorzystać zaimplementowane wcześniej funkcje.
+
+Wszytskie funkcje odwołujące się do zbioru osób przyjmują jako jeden z parametrów wskaźnik do struktury PersonList zaalokowanej na stosie
+( nie ma potrzeby zwalaniania pamieći samej struktury).
+
+Zaimplementuj:
+
+a) definicję struktury PersonList, a także funkcję inicjalizującą void init_pl(PersonList * p_pl).Wskaźnik p_pl wskazuje na niezainicjalizowaną struktruę typu PersonList.
+
+b) void free_pl(PersonList * p_pl) - funkcja zwalnia wszystkie dane przechowywane w zbiorze osób(takze przechowywane na stercie dane osób)
+
+c) void fill_person_data(PersonList * p_p, const char* pesel, const *char name, const*char surname)- funkcja wypełnia pola niezainicjalizowaną 
+  struktury wskazywanej przez p_p kopią parametru pesel i adresami kopii(na stercie) imienia i nazwiska.
+
+d) int add(PersonList * p_pl, const char* pesel, const *char name, const*char surname) - funckja dodaje do listy p_pl osobę , której dane są przekazywane 
+   w pozostałych paramterach.Jeżeli osoba o tamie samym identyfikatorze pesel istnieje, zmienia jej dane na te podane pozostałymi parametrami i zwraca 1, 
+   jeżeli nie istnieje dodaje ja i zwraca 0.
+
+e) Person *find(const PersonList *p_pl, const char*pesel) - zwraca wskaźnik do osoby o danym identyfikatorze Pesel zawartym w zbiorze osób, 
+   Funkcja zwraca NULL jeżeli w zbiorze brak osoby o danym peselu.
+
+
+f) void merge(PersonList * p_target,const PersonList *p_src) - funkcja dodaje do zbioru p_target wszystkie dane przechowywane w zbiorze p_src. 
+Jeżeli element o danym identyfikatorze Pesel istnieje w zbiorze p_target,jego dane (imię i nazwisko) są zastępowane wartościami z p_src

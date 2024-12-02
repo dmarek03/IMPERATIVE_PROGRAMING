@@ -1,0 +1,32 @@
+Informacje z dowodu rejstarcyjnego pojazdu są zapisane w strukturze Vehicle. Założenia:
+Każda struktura typu struct Vehicle może zawierać informacje o pojazdach jednego z trzech typów pojazdów-osobowego/autubusu/ciężarowego.
+Tego samego typu dane w takich strukturach dla wszystkich typów pojazdó to:
+
+-właściciel(nazwa firmy lub imię i nazwisko-zapisane w jednm łańcuchu na stercie),
+- data najbliższego przegladu - zapisana w 3-elementowej tablicy typu int zapisanej w jednym polu struktury(w kolejnośći d,m, y);
+- typ pojazdu(dana wyliczeniowa z stałymi:car, bus, truck),
+- typ napędu(dana wyliczeniowa z stałymi:electric, hybrid, combustion);
+
+Dane specyficzne dla typu pojazdu to:
+
+- dla osobowego: maksymalna liczba osób (int) oraz moc śilnika (float);
+- dla autobusu: liczba miejsc siedzących (int) i liczba miejsc stojących(int);
+- dla ciężarowego: pojemność slinka (float) i dopuszczalny nacisk na oś (float);
+
+Należy napisać:
+
+-Deklarację struktury Vehicle oraz wszytskich jej składników typu struktura, unia lub wyliczeniowy
+
+- Funkcję void new_owner(struct Vehicle *pvehicle); która wczytuje z klawiatury nazwę nowego właściciela, usuwa informację o 
+  poprzednim właśicielu oraz odpowiednio modyfikuje zawrtość pól struktury wskazywanej przez pvehicle.
+
+- Funkcję szukającą spóźnialskich int delayed(struct Vehicle *pvehicle, int size, int *base_date, char ***pdelayed_owners);, 
+  która znajduje w tablicy pvehicle (o długośći size) wszystkie struktury pojazdó, których data 
+  jest wszcześniejsza niż przekazana przez paramter base_date(w formacie takim w jakim jest 
+  zapisana w strukturze vehicle). Funkcja tworzy tablicę delayed_owners, do której przepisuje adresy łańcuchów zawierających 
+  nazwy właścicieli pojazdów z "przekroczoną " datą.Adres tej tablicy przekazuje korzystając z paramteru pdelayed_owners.
+  Funkcja zwraca liczbę opóźnień.W przypadku zerowej liczby opóźnień, funkcją zamiast adresu tablicy powinna przekazać aderes zerowy.
+
+
+- Funkcję void print_pojazd(struct Vehicle *pvehicle);, która wyprowadza wszytskie dane o pojeździe. Typ pojazdu oraz typ napędu 
+  może być wypisany jak kod liczbowy(wartość liczbowa zamiast zmiennej typu wyliczeniowego

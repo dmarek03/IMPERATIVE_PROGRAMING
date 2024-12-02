@@ -1,0 +1,33 @@
+Struktura przechowująca dane macierzy 2D na stercie zdefiniowana jest następująco:
+typedef struct_matrix{
+  int rows;
+  int cols;
+  double **data;
+}Matrix;
+
+Wskaźnika data wskazuje na początek tablicy wskaźników typu double*. 
+Każdy z nich wskazuje dane wiersza macierzy.Czyli data[i] to i-ty wiersz macierzy. 
+Załóż,że zaimplemntowana jest funkcja int create_matrix(Matrix *pmatrix, int rows, int cols). 
+Która wypełnia wskazaną strukturę danymi, równoczesnie alokująć pamięć dla wszytskich tablic na stercie. 
+Elementy macierzy mają wartość 0. Funkjca zwraca 1, jeżeli operacja zakończyła się sukcesem, 0 w przypadku błędnych parametrow (rows, cols<1).
+
+Napisz następujące funkcje:
+
+a) int get(Matrix *pm, int row, int col, double *pvalue) oraz int set(Matrix *pm, int row, int col, double value).
+   Funkcje pozwalają na dostęp do elemntu macierzy. Zwracają 0 , jeżeli podano niewłaściwe wartośći wiersza lub kolumny
+   (albo data jest wskaźnikiem zerowym), natomiast 1 , kiedy dostęp został zrealizowany.
+
+b) void create_identity_matrix(Matrix *pm, int size)
+   Alokuje pamięć dla macierzy jednostkowej o rozmiarze size x size, umieszcza tam dane(jedynki na przekątnej) i wpisuje informację do struktury wskazywanej przez pm.
+
+c) double dot_prod_vect(const double*v1, const double*v2, int size)
+  Funkcja oblicza iloczyn skalarny dwóch wektrów(czyli sumę iloczynów elementó o tych samych indeksach).
+
+
+d) void mul_vect(double *result, const Matrix *pm, const double *vect)
+   Funkcja oblicza iloczyn macierzy pm i wektora vect oraz umieszcza wynik w wektorze result. Nie podano rozmiaró wektorów, ponieważ wynikają one z rozmiarów macierzy.
+   Użyj wewnątrz napisanej wcześniej funkcji dot_prod_vect()
+
+e) void max_element_in_rows(double *maxdata, const Matrix *pm)
+   Funkcja wypełnia tablicę maxdata najwięszkymi elementami znalezionymi w wierszach. Czyli maxdata[i] to największy element w wierszu o indeksie i. 
+Rozmiar maxdata nie jest przekazywany, wynika z rozmiaru macierzy

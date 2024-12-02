@@ -1,0 +1,25 @@
+# ninja log v5
+0	99	7094081511708700	CMakeFiles/kolos_poprawkowy_pi.dir/main.c.obj	66f62a766a6f3b1a
+100	246	7094081513154835	kolos_poprawkowy_pi.exe	c31d9b1f42e9a968
+2	90	7094082305579977	CMakeFiles/kolos_poprawkowy_pi.dir/main.c.obj	66f62a766a6f3b1a
+91	202	7094082306657097	kolos_poprawkowy_pi.exe	c31d9b1f42e9a968
+2	88	7094082528587202	CMakeFiles/kolos_poprawkowy_pi.dir/main.c.obj	66f62a766a6f3b1a
+89	205	7094082529704214	kolos_poprawkowy_pi.exe	c31d9b1f42e9a968
+2	88	7094082899312670	CMakeFiles/kolos_poprawkowy_pi.dir/main.c.obj	66f62a766a6f3b1a
+89	199	7094082900387800	kolos_poprawkowy_pi.exe	c31d9b1f42e9a968
+2	102	7094083887550827	CMakeFiles/kolos_poprawkowy_pi.dir/main.c.obj	66f62a766a6f3b1a
+103	213	7094083888625325	kolos_poprawkowy_pi.exe	c31d9b1f42e9a968
+1	90	7094086013472727	CMakeFiles/kolos_poprawkowy_pi.dir/main.c.obj	66f62a766a6f3b1a
+90	201	7094086014556804	kolos_poprawkowy_pi.exe	c31d9b1f42e9a968
+2	209	7094921244522661	CMakeFiles/kolos_poprawkowy_pi.dir/main.c.obj	66f62a766a6f3b1a
+210	531	7094921247726373	kolos_poprawkowy_pi.exe	c31d9b1f42e9a968
+3	156	7094933515335238	CMakeFiles/kolos_poprawkowy_pi.dir/main.c.obj	66f62a766a6f3b1a
+157	428	7094933518018628	kolos_poprawkowy_pi.exe	c31d9b1f42e9a968
+3	151	7094939466259294	CMakeFiles/kolos_poprawkowy_pi.dir/main.c.obj	66f62a766a6f3b1a
+152	311	7094939467826332	kolos_poprawkowy_pi.exe	c31d9b1f42e9a968
+4	98	7094941381089221	CMakeFiles/kolos_poprawkowy_pi.dir/main.c.obj	66f62a766a6f3b1a
+99	209	7094941382166686	kolos_poprawkowy_pi.exe	c31d9b1f42e9a968
+2	93	7094942524993126	CMakeFiles/kolos_poprawkowy_pi.dir/main.c.obj	66f62a766a6f3b1a
+93	206	7094942526080205	kolos_poprawkowy_pi.exe	c31d9b1f42e9a968
+3	138	7095659044931135	CMakeFiles/kolos_poprawkowy_pi.dir/main.c.obj	66f62a766a6f3b1a
+139	276	7095659046287831	kolos_poprawkowy_pi.exe	c31d9b1f42e9a968
